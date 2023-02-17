@@ -6,7 +6,25 @@
 
 - `docker version`
 
-  returns the docker information
+  Returns the docker information
+
+- `docker image inspect`
+
+  See the labels applied to any image
+
+- `docker image build`
+
+  Runs the build
+
+  Using `docker image build` is functionally the same as using `docker build`.
+
+- `docker image build --no-cache`
+
+  Disables the cache for a build
+
+- `docker image build --build-arg email=me@example.com`
+
+  If we wanted to change a argumnt passed in the Dockerfile we could simply re-run the build, and provide a new value for the ARG via the --build-arg command line argument
 
 - `docker container run` or `docker run`
 
@@ -15,6 +33,10 @@
   - Installing Fedora: `docker container run --rm -ti docker.io/fedora:latest /bin/bash`
 
   - Installing Alpine Linux: `docker container run --rm -ti docker.io/alpine:latest /bin/sh`
+
+- `docker container ls`
+
+  Verify containers running
 
 - `docker system df`
 
