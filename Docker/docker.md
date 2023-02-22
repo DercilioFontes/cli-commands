@@ -36,7 +36,15 @@
 
 - `docker container ls`
 
-  Verify containers running
+  Verify containers running.
+
+  Using `docker container ls` is functionally equivalent to using `docker container list`, `docker container ps`, or `docker ps`
+
+- `docker container stop <CONTAINER ID>`
+
+  Using the container ID from the previous output, you can stop the running container
+
+  Using `docker container stop` is also functionally equivalent to using `docker stop`
 
 - `docker system df`
 
@@ -52,6 +60,18 @@
 
   Only prune images
 
+- `docker login`
+
+  Log in to the Docker Hub registry
+
+  The command `docker login` is functionally the same command as docker `login docker.io`
+
+  If you were trying to log in to something other than the Docker Hub registry, you could supply the hostname on the command line: `docker login someregistry.example.com`
+
+- `docker logout`
+
+  Log out of a registry
+
 # Example projects
 
 - [Simulate Bitbucket pipeline](https://confluence.atlassian.com/bbkb/debug-pipelines-locally-with-docker-1167698072.html)
@@ -59,3 +79,5 @@
   - `docker build --memory=1g --memory-swap=1g -t account/imagename:tag -f parrot.dockerfile .`
 
   - `docker run -it --memory=4g --memory-swap=4g --memory-swappiness=0 --cpus=4 --entrypoint=/bin/bash account/imagename:tag`
+
+  dckr_pat_JNK469zR62TnCVrJLGk_3JkaPkg
