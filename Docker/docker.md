@@ -79,5 +79,3 @@
   - `docker build --memory=1g --memory-swap=1g -t account/imagename:tag -f parrot.dockerfile .`
 
   - `docker run -it --memory=4g --memory-swap=4g --memory-swappiness=0 --cpus=4 --entrypoint=/bin/bash account/imagename:tag`
-
-  dckr_pat_JNK469zR62TnCVrJLGk_3JkaPkg
