@@ -26,6 +26,24 @@
 
   If we wanted to change a argumnt passed in the Dockerfile we could simply re-run the build, and provide a new value for the ARG via the --build-arg command line argument
 
+- `docker image tag`
+
+  You can easily edit the tags on the image that you already created by running the following command and replacing `${<myuser>}` with your Docker Hub username
+
+```shell
+docker image tag example/docker-node-hello:latest \
+docker.io/${<myuser>}/docker-node-hello:latest
+```
+- `docker image push <tag>`
+
+  Upload an image to the Docker repository
+
+  `docker image push ${<myuser>}/docker-node-hello:latest`
+
+- `docker image pull <tag>`
+
+  Download an image
+
 - `docker container run` or `docker run`
 
   - Installing Ubuntu: `docker container run --rm -ti docker.io/ubuntu:latest /bin/bash`
