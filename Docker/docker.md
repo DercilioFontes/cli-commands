@@ -44,6 +44,10 @@ docker.io/${<myuser>}/docker-node-hello:latest
 
   Download an image
 
+- `docker search`
+
+  Find images. Example: `docker search node`
+
 - `docker container run` or `docker run`
 
   - Installing Ubuntu: `docker container run --rm -ti docker.io/ubuntu:latest /bin/bash`
